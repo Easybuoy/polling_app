@@ -12,14 +12,73 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <h1>Entered</h1>
+    <div class="container">
+    
+        <h1>Vote</h1>
+        <div class="row">
+            <div class=""col-lg-4 col-md-12 mb-4"">
+<!-- Card -->
+<div class="card mx-xl-5">
+
+    <!-- Card body -->
+    <div class="card-body">
+
+        <!-- Default form subscription -->
+        <form id="vote-form">
+            <p class="h4 text-center py-4">Subscribe</p>
+
+            <!-- Default input name -->
+            <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Your name</label>
+            <!-- <input type="text" id="defaultFormCardNameEx" class="form-control"> -->
+            
+        <div class="form-check mb-4">
+        <input name="os" type="radio" class="form-check-input with-gap" id="windows" value="windows">
+        <label class="form-check-label" for="windows">Windows</label>
+    </div>
+    
+    <div class="form-check mb-4">
+        <input name="os" type="radio" class="form-check-input with-gap" id="mac" value="mac">
+        <label class="form-check-label" for="mac">Mac</label>
+    </div>
+    
+    <div class="form-check">
+        <input name="os" type="radio" class="form-check-input with-gap" id="linux" value="linux">
+        <label class="form-check-label" for="linux">Linux</label>
+    </div>
+                
+            <br>
+
+            <!-- Default input email
+            <label for="defaultFormCardEmailEx" class="grey-text font-weight-light">Your email</label>
+            <input type="email" id="defaultFormCardEmailEx" class="form-control"> -->
+
+            <div class="text-center py-4 mt-3">
+                <button class="btn btn-outline-purple" type="submit" value="Send">Send<i class="fa fa-paper-plane-o ml-2"></i></button>
+            </div>
+        </form>
+        <!-- Default form subscription -->
+
+    </div>
+    <!-- Card body -->
+
+</div>
+<!-- Card -->
+</div>
+
+</div>      
+<!-- Row -->
+
+    </div>
 
 
+    <div class="" id="chartContainer"></div>
 
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
             <script type="text/javascript" src="js/popper.min.js"></script>
             <script type="text/javascript" src="js/bootstrap.min.js"></script>
             <script type="text/javascript" src="js/mdb.min.js"></script>
-            <script src="js/main.js"></script>
+           <script src= "https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+           <script src="js/main.js"></script>
 </body>
 </html>
