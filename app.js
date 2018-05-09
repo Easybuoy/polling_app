@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
+const poll = require('./routes/poll');
 //set public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -14,6 +15,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 //Enable cors
 app.use(cors());
+app.use('/poll', poll);
 
 const port = process.env.PORT || 3000;
 
