@@ -15,7 +15,7 @@ router.get('/', (req, res)=>{
 });
 
 router.post('/', (req, res) => {
-    pusher.trigger('my-channel', 'my-event', {
+    pusher.trigger('os-poll', 'os-vote', {
         points: 1,
         os: req.body.os
       });
