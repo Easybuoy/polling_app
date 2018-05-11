@@ -14,7 +14,7 @@ var pusher = new Pusher({
   });
 
 router.get('/', (req, res)=>{
-    res.send('POLL');
+    vote.find().then(votes => res.json({sucess: true, votes: votes}));
 });
 
 router.post('/', (req, res) => { 
